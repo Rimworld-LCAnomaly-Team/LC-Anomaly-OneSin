@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnRenderTreeDef>
+    <defName>OneSin</defName>
+    <root Class="PawnRenderNodeProperties_Parent">
+      <debugLabel>Root</debugLabel>
+      <tagDef>Root</tagDef>
+      <children>
+        <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+          <debugLabel>Body</debugLabel>
+          <tagDef>Body</tagDef>
+          <texPath>Things/Pawn/OneSin/OneSin</texPath>
+          <useRottenColor>true</useRottenColor>
+          <baseLayer>4</baseLayer>
+          <offset>0,0</offset>
+          <drawSize>1.5,1.5</drawSize>
+        </li>
+        <li Class="PawnRenderNodeProperties_Carried">
+          <debugLabel>Carried thing</debugLabel>
+          <workerClass>PawnRenderNodeWorker_Carried</workerClass>
+        </li>
+      </children>
+    </root>
+  </PawnRenderTreeDef>
+
+</Defs>

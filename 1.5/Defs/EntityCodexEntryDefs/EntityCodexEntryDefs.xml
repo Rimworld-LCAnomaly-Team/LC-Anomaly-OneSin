@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+  	<defName>OneSin</defName>
+    <label>One Sin</label>
+    <description>One Sin and Hundreds of Good Deeds (O-03-03), commonly referred to as One Sin, is a relatively harmless Abnormality that is in the shape of a levitating cross\n,seemingly melded with a skull, both of which are bound tightly together by a thorn crown.</description>
+    <uiIconPath>UI/CodexEntries/OneSin</uiIconPath>
+    <category>ZAYIN</category>
+    <discoveryType>BecameVisible</discoveryType>
+    <linkedThings>
+      <li>OneSin</li>
+    </linkedThings>
+    <orderInCategory>800</orderInCategory>
+  </LCAnomalyLibrary.Defs.EntityCodexEntryDef>
+
+</Defs>

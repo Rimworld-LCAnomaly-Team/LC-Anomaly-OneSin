@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LC_BaseMeleeWeapon_EGO_Blunt">
+    <defName>EgoWeapon_OneSin</defName>
+    <label>E.G.O. Weapon (One Sin) </label>
+    <description>To know means to understand. We successfully extracted the archetype and materialized it, and the observer reshaped it into a weapon.\nThis is why we highly regarded the act of observation. The eye sockets of the hollow skull stare into sins, and the crown of thorns casts blame. Those who are willing to spill blood for the greater good will be readily given approval for its use.\n\nThough this weapon is not as strong as other E.G.O weapons in our possession, it provides psychological comfort to the wielder.\nHowever, it is useless to those who do not know justice.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/EgoWeapon_OneSin</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+    </statBases>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>head</label>
+        <labelUsedInLogging>false</labelUsedInLogging>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>30</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+</Defs>
