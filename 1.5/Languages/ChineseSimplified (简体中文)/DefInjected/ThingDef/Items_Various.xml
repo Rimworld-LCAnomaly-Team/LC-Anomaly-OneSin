@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <OneSinEgg.label>一罪与百善蛋</OneSinEgg.label>
+  <OneSinEgg.description>异想体死亡后的原始形态，呈现出特殊的蛋形。</OneSinEgg.description>
+
+  <OneSinEgg.comps.CompHoldingPlatformTarget.capturedLetterLabel>一罪与百善重生</OneSinEgg.comps.CompHoldingPlatformTarget.capturedLetterLabel>
+  <OneSinEgg.comps.CompHoldingPlatformTarget.capturedLetterText>在{PAWN_nameDef}将一罪与百善的蛋束缚至收容平台后，里面的一罪与百善重生了。\n一罪与百善被镇压时肉体会消散，仅留下一罪与百善的蛋。</OneSinEgg.comps.CompHoldingPlatformTarget.capturedLetterText>
+  
+  <OneSinEgg.comps.CompUsable.useLabel>砸碎{0_label}</OneSinEgg.comps.CompUsable.useLabel>
+  <OneSinEgg.comps.CompUsable.useMessage>{PAWN_nameDef}将一罪与百善的蛋砸碎了。它消散后露出了一些PeBox。</OneSinEgg.comps.CompUsable.useMessage>
+  <OneSinEgg.comps.LC_CompEgg.activateDescString>砸碎一罪与百善的蛋以防止它复活成一只新的一罪与百善。</OneSinEgg.comps.LC_CompEgg.activateDescString>
+  <OneSinEgg.comps.LC_CompEgg.activateLabelString>砸碎...</OneSinEgg.comps.LC_CompEgg.activateLabelString>
+  <OneSinEgg.comps.LC_CompEgg.activatingStringPending>正在砸碎一罪与百善的蛋</OneSinEgg.comps.LC_CompEgg.activatingStringPending>
+  <OneSinEgg.comps.LC_CompEgg.guiLabelString>选择操作对象</OneSinEgg.comps.LC_CompEgg.guiLabelString>
+  
+</LanguageData>

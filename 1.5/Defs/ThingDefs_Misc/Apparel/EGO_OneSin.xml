@@ -9,21 +9,18 @@
       <texPath>Things/Pawn/Humanlike/Apparel/OneSinSuit/OneSinSuit</texPath>
     </graphicData>
     <statBases>
-      <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-      <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-      <ArmorRating_Heat>0.56</ArmorRating_Heat>
+      <ArmorRating_Sharp>0.68</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
       <Insulation_Cold>20</Insulation_Cold>
       <Insulation_Heat>20</Insulation_Heat>
-      <Mass>5</Mass>
+      <Mass>3</Mass>
       <EquipDelay>10</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MeleeHitChance>-1.00</MeleeHitChance>
-      <MeleeDodgeChance>-3.00</MeleeDodgeChance>
-      <ShootingAccuracyPawn>2.00</ShootingAccuracyPawn>
-      <RangedCooldownFactor>-0.10</RangedCooldownFactor>
-      <MoveSpeed>0.10</MoveSpeed>
-      <SocialImpact>0.10</SocialImpact>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <MeleeHitChance>+0.10</MeleeHitChance>
+      <ShootingAccuracyPawn>-0.50</ShootingAccuracyPawn>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
