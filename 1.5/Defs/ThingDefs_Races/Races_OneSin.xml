@@ -49,7 +49,7 @@
         <lookForTargetOnEscape>false</lookForTargetOnEscape>
         <hasAnimation>false</hasAnimation>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_Studiable">
+      <li Class="OneSin.Comp.CompProperties_Studiable_OneSin">
         <frequencyTicks>60000</frequencyTicks>
         <studyTimesPeriod>1</studyTimesPeriod>
         <knowledgeCategory>Basic</knowledgeCategory>
@@ -74,9 +74,9 @@
     <comps>
       <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">
         <peBoxDef>EnkephalinBox</peBoxDef>
-        <amountStudyGood>10</amountStudyGood>
-        <amountStudyNormal>5</amountStudyNormal> 
-        <amountStudyBad>1</amountStudyBad>
+        <amountProdueRangeNormal>4~7</amountProdueRangeNormal>
+        <amountProdueMax>10</amountProdueMax>
+        <boxTexOffsetZ>0.178</boxTexOffsetZ>
       </li>
       <li Class="LCAnomalyLibrary.Comp.CompProperties_Accessoryable">
         <accessoryDef>Accessory_OneSin</accessoryDef>

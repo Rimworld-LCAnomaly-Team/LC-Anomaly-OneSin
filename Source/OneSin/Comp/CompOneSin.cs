@@ -1,4 +1,5 @@
 ﻿using LCAnomalyLibrary.Comp;
+using LCAnomalyLibrary.Comp.Pawns;
 using LCAnomalyLibrary.Util;
 using RimWorld;
 using Verse;
@@ -37,49 +38,75 @@ namespace OneSin.Comp
 
         #region 研究与图鉴
 
-        protected override LC_StudyResult CheckFinalStudyQuality(Pawn studier, EAnomalyWorkType workType)
+        protected override float StudySuccessRateCalculate(CompPawnStatus studier, EAnomalyWorkType workType)
         {
-            //每级智力提供5%成功率，10级智力提供50%成功率
-            float successRate_Intellectual = studier.skills.GetSkill(SkillDefOf.Intellectual).Level * 0.05f;
-            //叠加基础成功率，此处是50%，叠加完应是100%
-            float finalSuccessRate = successRate_Intellectual + Props.studySucessRateBase;
+            float baseRate = base.StudySuccessRateCalculate(studier, workType);
+            float workTypeRate = 0;
+            float finalRate = 0;
 
-            //本能，沟通和洞察+10%成功率，压迫-20%成功率
             switch (workType)
             {
                 case EAnomalyWorkType.Instinct:
-                    finalSuccessRate += 0.1f;
+                    //本能：I级50%，II级40%，别的30%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Fortitude))
+                    {
+                        case EPawnLevel.I:
+                            workTypeRate = 0.5f;
+                            break;
+                        case EPawnLevel.II:
+                            workTypeRate = 0.4f;
+                            break;
+                        default:
+                            workTypeRate = 0.3f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Insight:
-                    finalSuccessRate += 0.1f;
+                    //洞察：I和II级70%，别的50%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Prudence))
+                    {
+                        case EPawnLevel.I:
+                        case EPawnLevel.II:
+                            workTypeRate = 0.7f;
+                            break;
+                        default:
+                            workTypeRate = 0.5f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Attachment:
-                    finalSuccessRate += 0.1f;
+                    //沟通：70%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Temperance))
+                    {
+                        default:
+                            workTypeRate = 0.7f;
+                            break;
+                    }
                     break;
-
                 case EAnomalyWorkType.Repression:
-                    finalSuccessRate -= 0.2f;
+                    //压迫：I级50%，II级40%，别的30%
+                    switch (studier.GetPawnStatusELevel(EPawnStatus.Justice))
+                    {
+                        case EPawnLevel.I:
+                            workTypeRate = 0.5f;
+                            break;
+                        case EPawnLevel.II:
+                            workTypeRate = 0.4f;
+                            break;
+                        default:
+                            workTypeRate = 0.3f;
+                            break;
+                    }
                     break;
             }
 
-            //成功率不能超过90%
-            if (finalSuccessRate >= 1f)
-                finalSuccessRate = 0.9f;
+            finalRate = baseRate + workTypeRate;
 
-            return Rand.Chance(finalSuccessRate) ? LC_StudyResult.Good : LC_StudyResult.Normal;
-        }
+            //成功率不能超过95%
+            if (finalRate > 0.95f)
+                finalRate = 0.95f;
 
-        public override bool CheckStudierSkillRequire(Pawn studier)
-        {
-            if (studier.skills.GetSkill(SkillDefOf.Intellectual).Level < 2)
-            {
-                //Log.Message($"工作：{studier.Name}的技能{SkillDefOf.Intellectual.label.Translate()}等级不足2，工作固定无法成功");
-                return false;
-            }
-
-            return true;
+            return finalRate;
         }
 
         /// <summary>

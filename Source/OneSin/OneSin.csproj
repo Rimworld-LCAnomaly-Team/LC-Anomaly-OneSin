@@ -84,6 +84,8 @@
   <ItemGroup>
     <Compile Include="Comp\CompOneSin.cs" />
     <Compile Include="Comp\CompProperties_OneSin.cs" />
+    <Compile Include="Comp\CompProperties_Studiable_OneSin.cs" />
+    <Compile Include="Comp\CompStudiable_OneSin.cs" />
     <Compile Include="Def\AnimationDefOf.cs" />
     <Compile Include="Def\PawnKindDefOf.cs" />
     <Compile Include="Def\ThingDefOf.cs" />
