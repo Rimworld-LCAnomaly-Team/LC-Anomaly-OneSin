@@ -1,4 +1,4 @@
-﻿using LCAnomalyLibrary.Misc;
+﻿using LCAnomalyCore.Misc;
 using OneSin.Comp;
 using RimWorld;
 using Verse;

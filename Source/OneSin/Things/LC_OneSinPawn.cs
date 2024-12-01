@@ -1,4 +1,4 @@
-﻿using LCAnomalyLibrary.Comp;
+﻿using LCAnomalyCore.Comp;
 using OneSin.Comp;
 
 namespace OneSin.Things

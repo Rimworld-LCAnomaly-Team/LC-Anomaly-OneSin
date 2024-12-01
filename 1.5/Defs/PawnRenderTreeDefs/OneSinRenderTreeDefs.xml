@@ -7,7 +7,7 @@
       <debugLabel>Root</debugLabel>
       <tagDef>Root</tagDef>
       <children>
-        <li Class="LCAnomalyLibrary.Render.PawnRenderNodeProperties_StillState">
+        <li Class="LCAnomalyCore.Render.PawnRenderNodeProperties_StillState">
           <debugLabel>Body</debugLabel>
           <tagDef>Body</tagDef>
           <texPath>Things/Pawn/OneSin/OneSin</texPath>

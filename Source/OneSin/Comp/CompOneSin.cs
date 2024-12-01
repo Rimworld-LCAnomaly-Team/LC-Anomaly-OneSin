@@ -1,6 +1,6 @@
-﻿using LCAnomalyLibrary.Comp;
-using LCAnomalyLibrary.Comp.Pawns;
-using LCAnomalyLibrary.Util;
+﻿using LCAnomalyCore.Comp;
+using LCAnomalyCore.Comp.Pawns;
+using LCAnomalyCore.Util;
 using RimWorld;
 using Verse;
 

@@ -78,12 +78,12 @@
         <amountProdueMax>10</amountProdueMax>
         <boxTexOffsetZ>0.178</boxTexOffsetZ>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.CompProperties_Accessoryable">
+      <li Class="LCAnomalyCore.Comp.CompProperties_Accessoryable">
         <accessoryDef>Accessory_OneSin</accessoryDef>
         <accessoryChance>0.05</accessoryChance>
         <unlockLevel>2</unlockLevel>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.CompProperties_EgoExtractable">
+      <li Class="LCAnomalyCore.Comp.CompProperties_EgoExtractable">
         <weaponExtracted>EgoWeapon_OneSin</weaponExtracted>
         <weaponIconPath>UI/Commands/ExtractEGO_OneSin_Weapon</weaponIconPath>
         <amountMaxWeapon>5</amountMaxWeapon>
@@ -94,7 +94,7 @@
         <armorExtractedNeed>10</armorExtractedNeed>
         <unlockLevel>3</unlockLevel>
       </li>
-      <li Class="LCAnomalyLibrary.Comp.LC_CompProperties_StudyUnlocks">
+      <li Class="LCAnomalyCore.Comp.LC_CompProperties_StudyUnlocks">
         <studyNotes>
           <li>
             <threshold>1</threshold>
