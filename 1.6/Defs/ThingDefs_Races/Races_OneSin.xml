@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="LC_EntityBase" Name="BaseOneSin" Abstract="True">
+    <thingClass>OneSin.Things.LC_OneSinPawn</thingClass>
+    <statBases>
+      <MoveSpeed>0</MoveSpeed>
+      <Flammability>0</Flammability>
+      <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+      <ComfyTemperatureMax>100</ComfyTemperatureMax>
+      <PsychicSensitivity>0</PsychicSensitivity>
+      <MinimumContainmentStrength>0</MinimumContainmentStrength>
+      <StaggerDurationFactor>0</StaggerDurationFactor>
+      <ToxicResistance>1</ToxicResistance>
+    </statBases>
+    <race>
+      <body>OneSin</body>
+      <baseBodySize>1</baseBodySize>
+      <baseHealthScale>1</baseHealthScale>
+      <intelligence>ToolUser</intelligence>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <fleshType>EntityMechanical</fleshType>
+      <foodType>None</foodType>
+      <hasCorpse>false</hasCorpse>
+      <lifeExpectancy>1000</lifeExpectancy>
+      <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+      <soundCallIntervalRange>120~240</soundCallIntervalRange>
+      <disableIgniteVerb>true</disableIgniteVerb>
+      <trainability>None</trainability>
+      <lifeStageAges>
+        <li>
+          <def>EntityFullyFormed</def>
+          <!-- <soundDeath>Laetitia_Defeated</soundDeath> -->
+        </li>
+      </lifeStageAges>
+      <hediffGiverSets><li>AnomalyEntity</li></hediffGiverSets>
+    </race>
+    <comps>
+      <li Class="OneSin.Comp.CompProperties_OneSin">
+        <qliphothCountMax>-1</qliphothCountMax>
+        <studySucessRateBase>0.5</studySucessRateBase>
+        <shouldNotifyWhenEscape>false</shouldNotifyWhenEscape>
+        <ifProvideWarningPoints>false</ifProvideWarningPoints>
+        <customWarningPoints>-1</customWarningPoints>
+        <soundWorking>OneSin_loop</soundWorking>
+      </li>
+      <li Class="CompProperties_HoldingPlatformTarget">
+        <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+        <lookForTargetOnEscape>false</lookForTargetOnEscape>
+        <hasAnimation>false</hasAnimation>
+      </li>
+      <li Class="OneSin.Comp.CompProperties_Studiable_OneSin">
+        <frequencyTicks>60000</frequencyTicks>
+        <studyTimesPeriod>1</studyTimesPeriod>
+        <knowledgeCategory>Basic</knowledgeCategory>
+        <anomalyKnowledge>3</anomalyKnowledge>
+        <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
+        <requiresHoldingPlatform>true</requiresHoldingPlatform>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <!-- OneSin Contained -->
+  <ThingDef ParentName="BaseOneSin">
+    <defName>OneSin</defName>
+    <label>One Sin</label>
+    <description>One Sin and Hundreds of Good Deeds (O-03-03), commonly referred to as One Sin, is a relatively harmless Abnormality that is in the shape of a levitating cross\n,seemingly melded with a skull, both of which are bound tightly together by a thorn crown.</description>
+    <uiIconPath>UI/CodexEntries/OneSin</uiIconPath>
+    <race>
+      <renderTree>OneSin</renderTree>
+      <thinkTreeMain>OneSin</thinkTreeMain>
+      <thinkTreeConstant>OneSinConstant</thinkTreeConstant>
+    </race>
+    <comps>
+      <li Class="LCAnomalyCore.Comp.CompProperties_PeBoxProduce">
+        <peBoxDef>EnkephalinBox</peBoxDef>
+        <amountProdueRangeNormal>4~7</amountProdueRangeNormal>
+        <amountProdueMax>10</amountProdueMax>
+        <boxTexOffsetZ>0.178</boxTexOffsetZ>
+      </li>
+      <li Class="LCAnomalyCore.Comp.CompProperties_Accessoryable">
+        <accessoryDef>Accessory_OneSin</accessoryDef>
+        <accessoryChance>0.05</accessoryChance>
+        <unlockLevel>2</unlockLevel>
+      </li>
+      <li Class="LCAnomalyCore.Comp.CompProperties_EgoExtractable">
+        <weaponExtracted>EgoWeapon_OneSin</weaponExtracted>
+        <weaponIconPath>UI/Commands/ExtractEGO_OneSin_Weapon</weaponIconPath>
+        <amountMaxWeapon>5</amountMaxWeapon>
+        <weaponExtractedNeed>15</weaponExtractedNeed>
+        <armorExtracted>Apparel_OneSinSuit</armorExtracted>
+        <armorIconPath>UI/Commands/ExtractEGO_OneSin_Armor</armorIconPath>
+        <amountMaxArmor>5</amountMaxArmor>
+        <armorExtractedNeed>10</armorExtractedNeed>
+        <unlockLevel>3</unlockLevel>
+      </li>
+      <li Class="LCAnomalyCore.Comp.LC_CompProperties_StudyUnlocks">
+        <studyNotes>
+          <li>
+            <threshold>1</threshold>
+            <label>Observation Level: I</label>
+            <text>One Sin and Hundreds of Good Deeds will restore the employee's mental state when the work result is Good.\nThe employee, who received this benediction, commented that it felt refreshing.</text>
+          </li>
+          <li>
+            <threshold>3</threshold>
+            <label>Observation Level: II</label>
+            <text>After the maximum number of PE-Boxes was produced with One Sin and Hundreds of Good Deeds, it restored the mental health of every employee in the department.\nUnlocks the E.G.O. Gift 'OneSin'.</text>
+          </li>
+          <li>
+            <threshold>6</threshold>
+            <label>Observation Level: III</label>
+            <text>WIP\nUnlocks the E.G.O. Weapon and Suit 'OneSin'.</text>
+          </li>
+          <li>
+            <threshold>10</threshold>
+            <label>Observation Level: IV</label>
+            <text>WIP</text>
+          </li>
+        </studyNotes>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

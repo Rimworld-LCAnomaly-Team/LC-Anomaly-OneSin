@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="Apparel_OneSinSuit" ParentName="LC_Apparel_EGO">
+    <defName>Apparel_OneSinSuit</defName>
+    <label>E.G.O.Suit (OneSin)</label>
+    <description>Conventional firearms were ineffective against Abnormalities; using them was as futile as cutting water with a knife.\nThat was when we asked ourselves: “If Abnormalities are materialized from the unconsciousness, it may be possible to extract a piece of it back from them and turn it into a weapon.\n\nResults varied depending on the observer.\nThe crown of thorns will sometimes protect the wielder’s soul. The thorns may momentarily hurt as they anchor your soul to reality.\n\nThis suit will be no better than rags to those who have no sense of guilt.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/OneSinSuit/OneSinSuit</texPath>
+    </graphicData>
+    <statBases>
+      <ArmorRating_Sharp>0.68</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>20</Insulation_Cold>
+      <Insulation_Heat>20</Insulation_Heat>
+      <Mass>3</Mass>
+      <EquipDelay>10</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <MoveSpeed>-0.05</MoveSpeed>
+      <MeleeHitChance>+0.10</MeleeHitChance>
+      <ShootingAccuracyPawn>-0.50</ShootingAccuracyPawn>
+    </equippedStatOffsets>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Legs</li>
+        <li>Arms</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Feet</li>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/OneSinSuit/OneSinSuit</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+      <soundWear>Wear_PowerArmor</soundWear>
+      <soundRemove>Remove_PowerArmor</soundRemove>
+    </apparel>
+  </ThingDef>
+
+</Defs>

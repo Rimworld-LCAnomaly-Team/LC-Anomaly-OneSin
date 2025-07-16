@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <OneSin.label>一罪与百善</OneSin.label>
+  <OneSin.description>一罪与百善（O-03-03）是一个基本无害的异想体。从外表上看，它是一颗戴着荆棘之冠的巨大骷髅头，一根金属十字架贯穿了它的顶骨和两侧的颞骨。</OneSin.description>
+  
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.0.label>观察等级：I</OneSin.comps.LC_CompStudyUnlocks.studyNotes.0.label>
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.0.text>当工作结果为优时，“一罪与百善”会为完成工作的员工恢复一些精神值。某个员工解释说那是一种“释然”的感觉。</OneSin.comps.LC_CompStudyUnlocks.studyNotes.0.text>
+  
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.1.label>观察等级：II</OneSin.comps.LC_CompStudyUnlocks.studyNotes.1.label>
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.1.text>如果员工在一次工作中成功产出了所有的PE-BOX，那么“一罪与百善”会为该部门的所有员工恢复精神值。\nE.G.O饰品已解锁。</OneSin.comps.LC_CompStudyUnlocks.studyNotes.1.text>
+  
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.2.label>观察等级：III</OneSin.comps.LC_CompStudyUnlocks.studyNotes.2.label>
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.2.text>WIP\nE.G.O武器与护甲已解锁。</OneSin.comps.LC_CompStudyUnlocks.studyNotes.2.text>
+
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.3.label>观察等级：IV</OneSin.comps.LC_CompStudyUnlocks.studyNotes.3.label>
+  <OneSin.comps.LC_CompStudyUnlocks.studyNotes.3.text>WIP</OneSin.comps.LC_CompStudyUnlocks.studyNotes.3.text>
+  
+</LanguageData>
