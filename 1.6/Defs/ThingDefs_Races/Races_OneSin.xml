@@ -44,8 +44,7 @@
         <customWarningPoints>-1</customWarningPoints>
         <soundWorking>OneSin_loop</soundWorking>
       </li>
-      <li Class="CompProperties_HoldingPlatformTarget">
-        <baseEscapeIntervalMtbDays>45</baseEscapeIntervalMtbDays>
+      <li Class="LCAnomalyCore.Comp.CompProperties_AbnormalityHoldingPlatformTarget">
         <lookForTargetOnEscape>false</lookForTargetOnEscape>
         <hasAnimation>false</hasAnimation>
       </li>
@@ -94,7 +93,7 @@
         <armorExtractedNeed>10</armorExtractedNeed>
         <unlockLevel>3</unlockLevel>
       </li>
-      <li Class="LCAnomalyCore.Comp.LC_CompProperties_StudyUnlocks">
+      <li Class="LCAnomalyCore.Comp.CompProperties_AbnormalityStudyUnlocks">
         <studyNotes>
           <li>
             <threshold>1</threshold>

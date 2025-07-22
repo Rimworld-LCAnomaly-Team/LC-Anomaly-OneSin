@@ -6,7 +6,7 @@ using Verse;
 
 namespace OneSin.Comp
 {
-    public class CompOneSin : LC_CompEntity
+    public class CompOneSin : CompAbnormality
     {
         #region 变量
 

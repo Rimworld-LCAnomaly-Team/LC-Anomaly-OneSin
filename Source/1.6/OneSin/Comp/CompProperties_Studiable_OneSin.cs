@@ -2,7 +2,7 @@
 
 namespace OneSin.Comp
 {
-    public class CompProperties_Studiable_OneSin : LC_CompProperties_Studiable
+    public class CompProperties_Studiable_OneSin : CompProperties_AbnormalityStudiable
     {
         public CompProperties_Studiable_OneSin()
         {

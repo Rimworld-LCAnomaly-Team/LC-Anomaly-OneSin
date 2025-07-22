@@ -33,30 +33,10 @@
     </descriptionHyperlinks>
     <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
     <comps>
-      <li Class="CompProperties_HoldingPlatformTarget">
+      <li Class="LCAnomalyCore.Comp.CompProperties_AbnormalityHoldingPlatformTarget">
         <heldPawnKind>OneSin</heldPawnKind>
         <capturedLetterLabel>One Sin Preformed</capturedLetterLabel>
         <capturedLetterText>.</capturedLetterText>
-      </li>
-      <li Class="CompProperties_AttachPoints">
-        <points>
-          <li>
-            <offset>(-.25, 0, .25)</offset>
-            <type>PlatformRestraint0</type>
-          </li>
-          <li>
-            <offset>(.25, 0, .25)</offset>
-            <type>PlatformRestraint1</type>
-          </li>
-          <li>
-            <offset>(.25, 0, -.25)</offset>
-            <type>PlatformRestraint2</type>
-          </li>
-          <li>
-            <offset>(-.25, 0, -.25)</offset>
-            <type>PlatformRestraint3</type>
-          </li>
-        </points>
       </li>
       <li Class="CompProperties_Usable">
         <useJob>SmashThing</useJob>

@@ -2,7 +2,7 @@
 
 namespace OneSin.Comp
 {
-    public class CompStudiable_OneSin : LC_CompStudiable
+    public class CompStudiable_OneSin : CompAbnormalityStudiable
     {
         public override float GetWorkSpeedOffset()
         {
