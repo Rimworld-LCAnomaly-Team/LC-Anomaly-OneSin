@@ -31,7 +31,7 @@ namespace OneSin.Comp
         /// </summary>
         public override void Notify_Holded()
         {
-            CheckIsDiscovered();
+            //CheckIsDiscovered();
         }
 
         #endregion 触发事件
@@ -109,16 +109,16 @@ namespace OneSin.Comp
             return finalRate;
         }
 
-        /// <summary>
-        /// 检查是否已在图鉴中被解锁
-        /// </summary>
-        private void CheckIsDiscovered()
-        {
-            if (AnomalyUtility.ShouldNotifyCodex((Pawn)parent, EntityDiscoveryType.BecameVisible, out var entries))
-            {
-                Find.EntityCodex.SetDiscovered(entries, Def.PawnKindDefOf.OneSin.race, (Pawn)parent);
-            }
-        }
+        ///// <summary>
+        ///// 检查是否已在图鉴中被解锁
+        ///// </summary>
+        //private void CheckIsDiscovered()
+        //{
+        //    if (AnomalyUtility.ShouldNotifyCodex((Pawn)parent, EntityDiscoveryType.BecameVisible, out var entries))
+        //    {
+        //        Find.EntityCodex.SetDiscovered(entries, Def.PawnKindDefOf.OneSin.race, (Pawn)parent);
+        //    }
+        //}
 
         #endregion 研究与图鉴
     }
