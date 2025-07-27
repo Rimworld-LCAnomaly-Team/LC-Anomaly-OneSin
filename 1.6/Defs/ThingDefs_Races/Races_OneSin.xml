@@ -51,12 +51,14 @@
       <li Class="OneSin.Comp.CompProperties_Studiable_OneSin">
         <frequencyTicks>60000</frequencyTicks>
         <studyTimesPeriod>1</studyTimesPeriod>
-        <knowledgeCategory>Basic</knowledgeCategory>
-        <anomalyKnowledge>3</anomalyKnowledge>
         <minMonolithLevelForStudy>1</minMonolithLevelForStudy>
-        <requiresHoldingPlatform>true</requiresHoldingPlatform>
       </li>
     </comps>
+    <modExtensions>
+      <li Class="LCAnomalyCore.ModExtensions.ModExtension_AbnormalityCategory">
+        <abnormalityCategoryDef>ZAYIN</abnormalityCategoryDef>
+      </li>
+    </modExtensions>
   </ThingDef>
 
   <!-- OneSin Contained -->

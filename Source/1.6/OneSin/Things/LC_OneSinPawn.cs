@@ -1,5 +1,5 @@
 ﻿using LCAnomalyCore.Comp;
-using OneSin.Comp;
+using LCAnomalyCore.Util;
 
 namespace OneSin.Things
 {
@@ -12,11 +12,11 @@ namespace OneSin.Things
 
         protected override void Tick()
         {
-            //收容状态下丢下就出逃
-            if (CarriedBy == null)
-            {
-                GetComp<CompOneSin>()?.Notify_Escaped();
-            }
+            ////收容状态下丢下就出逃
+            //if (CarriedBy == null)
+            //{
+            //    GetComp<CompOneSin>()?.Notify_Escaped();
+            //}
 
             base.Tick();
         }

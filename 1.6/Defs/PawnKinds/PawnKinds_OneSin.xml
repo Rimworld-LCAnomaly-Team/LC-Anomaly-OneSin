@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <PawnKindDef Name="BaseOneSinKind" Abstract="True">
+  <LCAnomalyCore.Defs.PawnKindDef_AbnormalityEntity Name="BaseOneSinKind" Abstract="True">
     <canMeleeAttack>false</canMeleeAttack>
     <defaultFactionType>LC_Abnormalities</defaultFactionType>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
@@ -9,9 +9,9 @@
       <li>EntityAttacked</li>
     </meleeAttackInfectionPathways>
     <forceDeathOnDowned>true</forceDeathOnDowned>
-  </PawnKindDef>
+  </LCAnomalyCore.Defs.PawnKindDef_AbnormalityEntity>
 
-  <PawnKindDef ParentName="BaseOneSinKind">
+  <LCAnomalyCore.Defs.PawnKindDef_AbnormalityEntity ParentName="BaseOneSinKind">
     <defName>OneSin</defName>
     <label>One Sin</label>
     <race>OneSin</race>
@@ -30,6 +30,11 @@
         </silhouetteGraphicData>
       </li>
     </lifeStages>
-  </PawnKindDef>
+    <modExtensions>
+      <li Class="LCAnomalyCore.ModExtensions.ModExtension_AbnormalityCategory">
+        <abnormalityCategoryDef>ZAYIN</abnormalityCategoryDef>
+      </li>
+    </modExtensions>
+  </LCAnomalyCore.Defs.PawnKindDef_AbnormalityEntity>
 
 </Defs>

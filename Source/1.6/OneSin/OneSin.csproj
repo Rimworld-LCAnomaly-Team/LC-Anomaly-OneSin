@@ -63,7 +63,6 @@
     <Compile Include="Comp\CompProperties_Studiable_OneSin.cs" />
     <Compile Include="Comp\CompStudiable_OneSin.cs" />
     <Compile Include="Def\AnimationDefOf.cs" />
-    <Compile Include="Def\PawnKindDefOf.cs" />
     <Compile Include="Def\ThingDefOf.cs" />
     <Compile Include="Effect\DyingOneSin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

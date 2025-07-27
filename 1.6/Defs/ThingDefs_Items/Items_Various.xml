@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
-  <LCAnomalyCore.Defs.ThingDef_AnomalyEgg ParentName="ResourceBase">
+  <LCAnomalyCore.Defs.ThingDef_AbnormalityEgg ParentName="ResourceBase">
     <defName>OneSinEgg</defName>
     <label>OneSin Egg</label>
     <description>The original form of Abnormality after the death, presents a special egg shape</description>
-    <anomalyLevelTag>ZAYIN</anomalyLevelTag>
     <thingClass>ThingWithComps</thingClass>
     <graphicData>
       <texPath>Things/Item/Special/OneSinEgg</texPath>
@@ -71,6 +70,11 @@
         </targetingParameters>
       </li>
     </comps>
-  </LCAnomalyCore.Defs.ThingDef_AnomalyEgg>
+    <modExtensions>
+      <li Class="LCAnomalyCore.ModExtensions.ModExtension_AbnormalityCategory">
+        <abnormalityCategoryDef>ZAYIN</abnormalityCategoryDef>
+      </li>
+    </modExtensions>
+  </LCAnomalyCore.Defs.ThingDef_AbnormalityEgg>
 
 </Defs>

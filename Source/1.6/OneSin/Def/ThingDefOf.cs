@@ -7,7 +7,7 @@ namespace OneSin.Def
     [DefOf]
     public class ThingDefOf
     {
-        public static ThingDef_AnomalyEntity_Spawn DyingOneSin;
+        public static ThingDef_AbnormalityEntity_Spawn DyingOneSin;
 
         public static ThingDef OneSinEgg;
     }
