@@ -41,6 +41,15 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
     </apparel>
+    <modExtensions>
+      <li Class="LCAnomalyCore.ModExtensions.FourColorApparelExtension">
+        <riskLevel>ZAYIN</riskLevel>
+        <redResistance>0.9</redResistance>
+        <whiteResistance>0.8</whiteResistance>
+        <blackResistance>0.9</blackResistance>
+        <paleResistance>2.0</paleResistance>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>

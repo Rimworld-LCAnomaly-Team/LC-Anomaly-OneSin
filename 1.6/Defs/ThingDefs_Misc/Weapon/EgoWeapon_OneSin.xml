@@ -33,6 +33,13 @@
         <cooldownTime>0.8</cooldownTime>
       </li>
     </tools>
+    <modExtensions>
+      <li Class="LCAnomalyCore.ModExtensions.FourColorWeaponExtension">
+        <damageType>White</damageType>
+        <riskLevel>ZAYIN</riskLevel>
+        <damageMultiplier>1</damageMultiplier>
+      </li>
+    </modExtensions>
   </ThingDef>
 
 </Defs>
