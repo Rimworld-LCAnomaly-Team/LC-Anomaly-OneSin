@@ -8,7 +8,7 @@
       <ComfyTemperatureMin>-100</ComfyTemperatureMin>
       <ComfyTemperatureMax>100</ComfyTemperatureMax>
       <PsychicSensitivity>0</PsychicSensitivity>
-      <MinimumContainmentStrength>0</MinimumContainmentStrength>
+      <LC_MinimumContainmentStrength>0</LC_MinimumContainmentStrength>
       <StaggerDurationFactor>0</StaggerDurationFactor>
       <ToxicResistance>1</ToxicResistance>
     </statBases>
@@ -19,7 +19,7 @@
       <intelligence>ToolUser</intelligence>
       <needsRest>false</needsRest>
       <hasGenders>false</hasGenders>
-      <fleshType>EntityMechanical</fleshType>
+      <fleshType>Mechanoid</fleshType>
       <foodType>None</foodType>
       <hasCorpse>false</hasCorpse>
       <lifeExpectancy>1000</lifeExpectancy>
@@ -29,11 +29,10 @@
       <trainability>None</trainability>
       <lifeStageAges>
         <li>
-          <def>EntityFullyFormed</def>
+          <def>LC_EntityFullyFormed</def>
           <!-- <soundDeath>Laetitia_Defeated</soundDeath> -->
         </li>
       </lifeStageAges>
-      <hediffGiverSets><li>AnomalyEntity</li></hediffGiverSets>
     </race>
     <comps>
       <li Class="OneSin.Comp.CompProperties_OneSin">

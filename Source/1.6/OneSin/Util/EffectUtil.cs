@@ -16,7 +16,7 @@ namespace OneSin.Util
             Find.LetterStack.ReceiveLetter("LetterLabelOneSinKilled".Translate()
                 , "LetterOneSinKilled".Translate()
                 , LetterDefOf.PositiveEvent
-                , new LookTargets(pawn.PositionHeld, pawn.MapHeld));
+                , new LookTargets(pawn.PositionHeld, map));
 
             ((DyingOneSin)GenSpawn
                 .Spawn(Def.ThingDefOf.DyingOneSin, pawn.Position, map))

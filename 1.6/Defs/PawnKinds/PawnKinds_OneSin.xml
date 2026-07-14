@@ -5,9 +5,6 @@
     <canMeleeAttack>false</canMeleeAttack>
     <defaultFactionType>LC_Abnormalities</defaultFactionType>
     <overrideDebugActionCategory>Entity</overrideDebugActionCategory>
-    <meleeAttackInfectionPathways>
-      <li>EntityAttacked</li>
-    </meleeAttackInfectionPathways>
     <forceDeathOnDowned>true</forceDeathOnDowned>
   </LCAnomalyCore.Defs.PawnKindDef_AbnormalityEntity>
 

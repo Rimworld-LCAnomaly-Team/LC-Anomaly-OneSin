@@ -19,7 +19,7 @@
       <MarketValue>0</MarketValue>
       <Mass>5</Mass>
       <Flammability>0</Flammability>
-      <MinimumContainmentStrength>0</MinimumContainmentStrength>
+      <LC_MinimumContainmentStrength>0</LC_MinimumContainmentStrength>
     </statBases>
     <thingCategories>
       <li>LC_Entity_Egg</li>
@@ -44,14 +44,14 @@
         <useDuration>300</useDuration>
       </li>
       <li Class="CompProperties_UseEffectPlaySound">
-        <soundOnUsed>RevenantSpineSmash</soundOnUsed>
+        <soundOnUsed>ChunkRock_Drop</soundOnUsed>
       </li>
       <li Class="CompProperties_UseEffectDestroySelf">
         <leavings>
           <EnkephalinBox>10</EnkephalinBox>
         </leavings>
       </li>
-      <li Class="CompProperties_BiosignatureOwner"/>
+      <li Class="LCAnomalyCore.Comp.CompProperties_Abnormality"/>
       <li Class="LCAnomalyCore.Comp.LC_CompProperties_InteractableEgg">
         <compClass>LCAnomalyCore.Comp.LC_CompEgg</compClass>
         <ticksToActivate>0</ticksToActivate>
