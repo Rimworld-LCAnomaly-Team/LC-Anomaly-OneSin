@@ -4,6 +4,9 @@ using Verse;
 
 namespace OneSin.Util
 {
+    /// <summary>
+    /// 提供“一罪与百善”相关的效果处理方法。
+    /// </summary>
     public static class EffectUtil
     {
         /// <summary>

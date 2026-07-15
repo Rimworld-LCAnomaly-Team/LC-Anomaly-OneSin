@@ -11,6 +11,7 @@ namespace OneSin.Effect
     /// </summary>
     public class DyingOneSin : LC_FX_Standard
     {
+        /// <inheritdoc />
         public override void InitWith(Pawn targetPawn)
         {
             var comp = targetPawn.TryGetComp<CompOneSin>();
@@ -32,6 +33,7 @@ namespace OneSin.Effect
             hasInited = true;
         }
 
+        /// <inheritdoc />
         public override void Complete()
         {
             if (!hasInited)

@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 # Local DLL reference paths
 /Source/1.6/OneSin/OneSin.DllReferences.props
+
+# Generated XML documentation
+/1.6/Assemblies/OneSin.xml

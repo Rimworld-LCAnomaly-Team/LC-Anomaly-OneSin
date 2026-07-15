@@ -1,34 +1,30 @@
 ﻿using LCAnomalyCore.Comp;
 using LCAnomalyCore.Comp.Pawns;
 using LCAnomalyCore.Util;
-using RimWorld;
 using Verse;
 
 namespace OneSin.Comp
 {
+    /// <summary>
+    /// 提供“一罪与百善”的死亡、出逃和工作成功率逻辑。
+    /// </summary>
     public class CompOneSin : CompAbnormality
     {
-        #region 变量
-
-        public new CompProperties_OneSin Props => (CompProperties_OneSin)props;
-
-        #endregion 变量
-
         #region 触发事件
 
+        /// <inheritdoc />
         public override void Notify_Killed(Map prevMap, DamageInfo? dinfo = null)
         {
             Util.EffectUtil.OnOneSinDeath((Pawn)parent, prevMap);
         }
 
+        /// <inheritdoc />
         public override void Notify_Escaped()
         {
             parent.Kill();
         }
 
-        /// <summary>
-        /// 绑到收容平台上后的操作
-        /// </summary>
+        /// <inheritdoc />
         public override void Notify_Holded()
         {
             //CheckIsDiscovered();
@@ -38,11 +34,11 @@ namespace OneSin.Comp
 
         #region 研究与图鉴
 
+        /// <inheritdoc />
         protected override float StudySuccessRateCalculate(CompPawnStatus studier, EAnomalyWorkType workType)
         {
             float baseRate = base.StudySuccessRateCalculate(studier, workType);
             float workTypeRate = 0;
-            float finalRate = 0;
 
             switch (workType)
             {
@@ -100,7 +96,7 @@ namespace OneSin.Comp
                     break;
             }
 
-            finalRate = baseRate + workTypeRate;
+            float finalRate = baseRate + workTypeRate;
 
             //成功率不能超过95%
             if (finalRate > 0.95f)

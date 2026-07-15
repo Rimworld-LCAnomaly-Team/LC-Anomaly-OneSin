@@ -1,30 +1,17 @@
 ﻿using LCAnomalyCore.Comp;
-using LCAnomalyCore.Util;
 
 namespace OneSin.Things
 {
+    /// <summary>
+    /// 表示“一罪与百善”异常实体。
+    /// </summary>
     public class LC_OneSinPawn : LC_EntityBasePawn
     {
-        public LC_OneSinPawn()
-        {
-
-        }
-
-        protected override void Tick()
-        {
-            ////收容状态下丢下就出逃
-            //if (CarriedBy == null)
-            //{
-            //    GetComp<CompOneSin>()?.Notify_Escaped();
-            //}
-
-            base.Tick();
-        }
-
+        /// <inheritdoc />
         public override void TickHolded()
         {
-            if (this.Drawer.renderer.CurAnimation != Def.AnimationDefOf.OneSin_Idle)
-                this.Drawer.renderer.SetAnimation(Def.AnimationDefOf.OneSin_Idle);
+            if (Drawer.renderer.CurAnimation != Def.AnimationDefOf.OneSin_Idle)
+                Drawer.renderer.SetAnimation(Def.AnimationDefOf.OneSin_Idle);
         }
     }
 }
