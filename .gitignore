@@ -396,3 +396,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# Local DLL reference paths
+/Source/1.6/OneSin/OneSin.DllReferences.props
