@@ -1,4 +1,4 @@
-﻿using LCAnomalyCore.Misc;
+using LCAnomalyCore.Misc;
 using LCAnomalyCore.Comp;
 using OneSin.Comp;
 using RimWorld;
@@ -19,16 +19,8 @@ namespace OneSin.Effect
             //传递生物特征，播放effecter特效，记录动画播放完的时间
             bioSignature = comp.biosignature;
 
-            EffecterDef effecterDef = ModsConfig.AnomalyActive ? EffecterDefOf.MeatExplosionExtraLarge : null;
-            if (effecterDef != null)
-            {
-                Effecter effecter = effecterDef.SpawnMaintained(base.Position, base.Map);
-                completeTick = base.TickSpawned + effecter.ticksLeft + 60;
-            }
-            else
-            {
-                completeTick = base.TickSpawned + 60;
-            }
+            LCAnomalyCore.Util.AbnormalityUtility.Burst(Position, Map, 2f);
+            completeTick = TickSpawned + 60;
 
             hasInited = true;
         }
@@ -43,9 +35,7 @@ namespace OneSin.Effect
                 return;
             }
             //生成扭曲血肉脏污
-            ThingDef filthDef = ModsConfig.AnomalyActive
-                ? RimWorld.ThingDefOf.Filth_TwistedFlesh
-                : RimWorld.ThingDefOf.Filth_Blood;
+            ThingDef filthDef = RimWorld.ThingDefOf.Filth_Blood;
             if (filthDef != null && FilthMaker.TryMakeFilth(base.PositionHeld, base.Map, filthDef))
             {
                 //清除1格以内的植物
@@ -61,11 +51,7 @@ namespace OneSin.Effect
 
             //生成蛋，销毁自己
             Thing thing = ThingMaker.MakeThing(Def.ThingDefOf.OneSinEgg);
-            CompAbnormality abnormalityComp = thing.TryGetComp<CompAbnormality>();
-            if (abnormalityComp != null)
-            {
-                abnormalityComp.biosignature = bioSignature;
-            }
+            LCAnomalyCore.Util.AbnormalityUtility.TransferSignature(thing, bioSignature);
             GenSpawn.Spawn(thing, base.PositionHeld, base.MapHeld);
             Destroy();
         }

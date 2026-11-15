@@ -30,7 +30,7 @@
     <descriptionHyperlinks>
       <PawnKindDef>OneSin</PawnKindDef>
     </descriptionHyperlinks>
-    <hiddenWhileUndiscovered>true</hiddenWhileUndiscovered>
+    <hiddenWhileUndiscovered>false</hiddenWhileUndiscovered>
     <comps>
       <li Class="LCAnomalyCore.Comp.CompProperties_AbnormalityHoldingPlatformTarget">
         <heldPawnKind>OneSin</heldPawnKind>

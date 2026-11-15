@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
   <!-- Bodies -->
@@ -90,7 +90,7 @@
           </groups>
           <parts>
             <li>
-              <def>FleshbeastHead</def>
+              <def>Head</def>
               <coverage>0.80</coverage>
               <groups>
                 <li>UpperHead</li>
@@ -165,7 +165,7 @@
           </groups>
         </li>
         <li>
-          <def>FleshbeastLeg</def>
+          <def>LC_AbnormalityLimb</def>
           <customLabel>left tentacle</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
@@ -174,7 +174,7 @@
           </groups>
         </li>
         <li>
-          <def>FleshbeastLeg</def>
+          <def>LC_AbnormalityLimb</def>
           <customLabel>right tentacle</customLabel>
           <coverage>0.1</coverage>
           <height>Bottom</height>
