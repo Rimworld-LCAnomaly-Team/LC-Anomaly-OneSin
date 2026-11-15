@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- Idle -->
+  <AnimationDef>
+    <defName>OneSin_Idle</defName>
+    <durationTicks>120</durationTicks>
+    <startOnRandomTick>false</startOnRandomTick>
+    <playWhenDowned>true</playWhenDowned>
+    <keyframeParts>
+      <!-- Root the all -->
+      <li>
+        <key>Root</key>
+        <value>
+          <workerType>AnimationWorker_Keyframes</workerType>
+          <keyframes>
+            <li>
+              <tick>0</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+            <li>
+              <tick>60</tick>
+              <offset>(0,0,-0.1)</offset>
+            </li>
+            <li>
+              <tick>120</tick>
+              <offset>(0,0,0)</offset>
+            </li>
+          </keyframes>
+        </value>
+      </li>
+    </keyframeParts>
+  </AnimationDef>
+
+</Defs>
